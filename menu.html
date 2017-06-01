@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>BENz CAFE</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="images/icon.png"/>
+  </head>
+  <body>
+
+	<button onclick="topFunction()" class="btn btn-info" id="myBtn" title="Go to top">Top</button>
+    <nav class="navbar navbar-default navbar-fixed-top" >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li class="active">
+            <a href="menu.html">MENU</a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT US</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+     <!-- Drinks Group -->
+    <div class="background-drinks">
+      <h1>OUR MENU</h1>
+        <div class="row menu" id="id-drinks">
+          <div class="panel-group">
+            <h2>DRINKS</h2>        
+            <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+              <div class="panel-default menu-panel">
+               <div class="panel-body">
+                <figure>
+                  <li data-toggle="modal" data-target="#myDrinkModal" >
+                    <a href="#drink-gallery" data-slide-to="0">
+                      <img class="img-thumbnail" src="images/drinks/latte.jpg">
+                    </a>
+                  </li>
+                </figure>
+                <h4>Cappucino</h4>
+                <figcaption>Dark and Rich expresso with clense and milky foam. Topped with sweetened whipped cream</figcaption>
+                <span>90.00 (8oz)</span>
+               </div>
+              </div>
+            </div>  
+            <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+              <div class="panel-default menu-panel">
+               <div class="panel-body">
+                <figure>
+                  <li data-toggle="modal" data-target="#myDrinkModal" >
+                    <a href="#drink-gallery" data-slide-to="1">
+                      <img class="img-thumbnail" src="images/drinks/frozen-caramel-latte.jpg">
+                    </a>
+                  </li>
+                </figure>
+                <h4>Frozen Caramel Latte</h4>
+                <figcaption>Latte Frappe topped with sweet caramel sauce and sweetened cream</figcaption>
+                <span>65.00 (8oz)</span>
+               </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+              <div class="panel-default menu-panel">
+               <div class="panel-body">
+                <figure>
+                  <li data-toggle="modal" data-target="#myDrinkModal" >
+                    <a href="#drink-gallery" data-slide-to="2">
+                      <img class="img-thumbnail" src="images/drinks/chocolate-milkshake.jpg">
+                    </a>
+                  </li>
+                </figure>
+                <h4>Chocolate Milkshake</h4>
+                <figcaption>This chocolate and milky frozen drink will surely bring the boys (or girls) to your yard</figcaption>
+                <span>90.00 (8oz)</span>
+               </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+              <div class="panel-default menu-panel">
+               <div class="panel-body">
+                <figure>
+                  <li data-toggle="modal" data-target="#myDrinkModal" >
+                    <a href="#drink-gallery" data-slide-to="3">
+                      <img class="img-thumbnail" src="images/drinks/vanilla-cappucino-frappe.jpg">
+                    </a>
+                  </li>
+                </figure>
+                <h4>Vanilla Cappucino Frappe</h4>
+                <figcaption>Rich Cappucino frappe with clense and delicious vanilla foam. topped with sweetened whipped cream</figcaption>
+                <span>70.00 (8oz)</span>
+               </div>
+              </div>
+            </div>
+            <!-- Hidden Drinks  -->      
+            <div id="demo" class="collapse">
+            <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+              <div class="panel-default menu-panel">
+               <div class="panel-body">
+                <figure>
+                  <li data-toggle="modal" data-target="#myDrinkModal" >
+                    <a href="#drink-gallery" data-slide-to="4">
+                      <img class="img-thumbnail" src="images/drinks/coffee.jpg">
+                    </a>
+                  </li>
+                </figure>
+                <h4>Coffee</h4>
+                <figcaption>brewed drink prepared from roasted coffee beans</figcaption>
+                <span>65.00 (8oz)</span>
+               </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+              <div class="panel-default menu-panel">
+               <div class="panel-body">
+                <figure>
+                  <li data-toggle="modal" data-target="#myDrinkModal" >
+                    <a href="#drink-gallery" data-slide-to="5">
+                      <img class="img-thumbnail" src="images/drinks/chocolate-malt.jpg">
+                    </a>
+                  </li>
+                </figure>
+                <h4>Chocolate Malt</h4>
+                <figcaption>This chocolate and milky frozen drink will surely bring the boys (or girls) to your yard</figcaption>
+                <span>80.00 (8oz)</span>
+               </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+              <div class="panel-default menu-panel">
+               <div class="panel-body">
+                <figure>
+                  <li data-toggle="modal" data-target="#myDrinkModal" >
+                    <a href="#drink-gallery" data-slide-to="6">
+                      <img class="img-thumbnail" src="images/drinks/milkshake.jpg">
+                    </a>
+                  </li>
+                </figure>
+                <h4>Milk Shake</h4>
+                <figcaption>a sweet, cold beverage with milk and flavorings </figcaption>
+                <span>80.00 (8oz)</span>
+               </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+              <div class="panel-default menu-panel">
+               <div class="panel-body">
+                <figure>
+                  <li data-toggle="modal" data-target="#myDrinkModal" >
+                    <a href="#drink-gallery" data-slide-to="7">
+                      <img class="img-thumbnail" src="images/drinks/coffee-cream.jpg">
+                    </a>
+                  </li>
+                </figure>
+                <h4>Coffe with Cream</h4>
+                <figcaption>brewed drink prepared from roasted coffee beans with cream</figcaption>
+                <span>100.00 (8oz)</span>
+               </div>
+              </div>
+            </div>
+
+            </div>   
+          </div>            
+            <a href="#id-drinks" rev="more" class="HSshowit btn btn-info" role="button" data-toggle="collapse" data-target="#demo">Show More</a>
+            
+        </div>
+    </div><!-- /Drinks Group -->
+    <!-- Waffle Group -->
+    <div class="background-waffle">
+      <div class="row menu" id="id-waffle">
+        <div class="panel-group">
+          <h2>WAFFLES</h2>        
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#myWaffleModal" >
+                  <a href="#waffle-gallery" data-slide-to="0">
+                    <img class="img-thumbnail" src="images/waffles/ice-cream-waffle.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Ice Cream Waffle</h4>
+              <figcaption>Coffee flavored waffle topped with ice cream.It's that simple. And it;s so Delicious!.</figcaption>
+              <span>90.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#myWaffleModal" >
+                  <a href="#waffle-gallery" data-slide-to="1">
+                    <img class="img-thumbnail" src="images/waffles/kiddy-waffle.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Kiddy Waffle</h4>
+              <figcaption>Bring out the kid in you and much on a waffle topped with gummy bears, sprinkles and a sweetened whipped cream</figcaption>
+              <span>65.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#myWaffleModal" >
+                  <a href="#waffle-gallery" data-slide-to="2">
+                    <img class="img-thumbnail" src="images/waffles/banana-split-waffle.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Banana Split Waffle</h4>
+              <figcaption>WAffle topped with a slice of banana, sweet whipped cream chocolate syrup.</figcaption>
+              <span>85.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#myWaffleModal" >
+                  <a href="#waffle-gallery" data-slide-to="3">
+                    <img class="img-thumbnail" src="images/waffles/strawberry-waffle.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Strawberry Waffle</h4>
+              <figcaption>Tickle your taste buds with this reimagined strawberry shortcake in a waffle! Topped with sweetened whipped cream and slices strawberry.</figcaption>
+              <span>75.00</span>
+             </div>
+            </div>
+          </div>
+          <!-- Hidden Waffle -->
+          <div id="demo2" class="collapse">
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#myWaffleModal" >
+                  <a href="#waffle-gallery" data-slide-to="4">
+                    <img class="img-thumbnail" src="images/waffles/blueberry-waffle.jpg">
+                </a>
+                </li>
+              </figure>
+              <h4>Blueberry Waffle</h4>
+              <figcaption>Tickle your taste buds. Topped with sweetened chocolate syrup and blueberry.</figcaption>
+              <span>85.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#myWaffleModal" >
+                  <a href="#waffle-gallery" data-slide-to="5">
+                    <img class="img-thumbnail" src="images/waffles/peanut-butter-waffle.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Peanut Butter Waffle</h4>
+              <figcaption>These tasty waffles are a great way to add a little more protein to your breakfast! The peanut butter syrup is absolutely divine!</figcaption>
+              <span>80.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#myWaffleModal" >
+                  <a href="#waffle-gallery" data-slide-to="6">
+                    <img class="img-thumbnail" src="images/waffles/chocolate-waffle.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Chocolate Waffle</h4>
+              <figcaption>Tasty chocolate waffles with chocolate syrup</figcaption>
+              <span>70.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#myWaffleModal" >
+                  <a href="#waffle-gallery" data-slide-to="7">
+                    <img class="img-thumbnail" src="images/waffles/waffle.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Waffle</h4>
+              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor</figcaption>
+              <span>55.00</span>
+             </div>
+            </div>
+          </div>
+          </div>   
+        </div>
+          <a href="#id-waffle" rev="more" class="HSshowit btn btn-info" role="button" data-toggle="collapse" data-target="#demo2">Show More </a>
+      </div>
+    </div><!-- /Waffle Group -->
+   <!--  Sandwich Group -->
+    <div class="background-sandwich">
+      <div class="row menu" id="id-sandwiches">
+        <div class="panel-group">
+          <h2>SANDWICHES</h2>        
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#mySandwichModal" >
+                  <a href="#sandwich-gallery" data-slide-to="0">
+                    <img class="img-thumbnail" src="images/sandwiches/club-sandwich.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Club Sandwich</h4>
+              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor</figcaption>
+              <span>75.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#mySandwichModal" >
+                  <a href="#sandwich-gallery" data-slide-to="1">
+                    <img class="img-thumbnail" src="images/sandwiches/pickled-herring-sandwich.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Pickled Sandwich</h4>
+              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor</figcaption>
+              <span>95.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#mySandwichModal" >
+                  <a href="#sandwich-gallery" data-slide-to="2">
+                    <img class="img-thumbnail" src="images/sandwiches/ruben-sandwich.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Ruben Sandwich</h4>
+              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor</figcaption>
+              <span>85.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#mySandwichModal" >
+                  <a href="#sandwich-gallery" data-slide-to="3">
+                    <img class="img-thumbnail" src="images/sandwiches/tesco-turkey-sandwich.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Tesco Turkey Sandwich</h4>
+              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor</figcaption>
+              <span>95.00</span>
+             </div>
+            </div>
+          </div>
+          <!-- Hidden Sandwiches -->
+          <div id="demo3" class="collapse">
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#mySandwichModal" >
+                  <a href="#sandwich-gallery" data-slide-to="4">
+                    <img class="img-thumbnail" src="images/sandwiches/wholemeal-bread-sandwich.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Whole Bread Sandwich</h4>
+              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor</figcaption>
+              <span>65.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#mySandwichModal" >
+                  <a href="#sandwich-gallery" data-slide-to="5">
+                    <img class="img-thumbnail" src="images/sandwiches/bacon-sandwich.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Bacon Sandwich</h4>
+              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor</figcaption>
+              <span>55.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#mySandwichModal" >
+                  <a href="#sandwich-gallery" data-slide-to="6">
+                    <img class="img-thumbnail" src="images/sandwiches/hotdog-sandwich.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Hotdog Sandwich</h4>
+              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor</figcaption>
+              <span>40.00</span>
+             </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 menu-col">
+            <div class="panel-default menu-panel">
+             <div class="panel-body">
+              <figure>
+                <li data-toggle="modal" data-target="#mySandwichModal" >
+                  <a href="#sandwich-gallery" data-slide-to="7">
+                    <img class="img-thumbnail" src="images/sandwiches/sandwich.jpg">
+                  </a>
+                </li>
+              </figure>
+              <h4>Sandwich</h4>
+              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor</figcaption>
+              <span>45.00</span>
+             </div>
+            </div>
+          </div>
+          </div>   
+        </div>
+          <a href="#id-sandwiches" rev="more" class="HSshowit btn btn-info" role="button" data-toggle="collapse" data-target="#demo3">Show More </a>
+      </div>
+    </div><!--  /Sandwich Group -->
+    <!-- Drinks Modal -->
+    <div class="modal fade" id="myDrinkModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="pull-left">DRINKS</div>
+            <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+          </div>
+          <div class="modal-body">
+
+        <!--begin carousel-->
+            <div id="drink-gallery" class="carousel slide" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active"> <img src="images/drinks/latte.jpg" alt="item0">
+                  <div class="carousel-caption">
+                    <h3>Cappucino</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img src="images/drinks/frozen-caramel-latte.jpg" alt="item1">
+                  <div class="carousel-caption">
+                    <h3>Frozen Caramel Latte</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/drinks/chocolate-milkshake.jpg" alt="item2">
+                  <div class="carousel-caption">
+                    <h3>Chocolate Milkshake</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/drinks/vanilla-cappucino-frappe.jpg" alt="item3">
+                  <div class="carousel-caption">
+                    <h3>Vanilla Cappucino Frappe</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/drinks/coffee.jpg" alt="item4">
+                  <div class="carousel-caption">
+                    <h3>Coffee</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/drinks/chocolate-malt.jpg" alt="item5">
+                  <div class="carousel-caption">
+                    <h3>Chocolate Malt</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/drinks/milkshake.jpg" alt="item6">
+                  <div class="carousel-caption">
+                    <h3>Milkshake</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/drinks/coffee-cream.jpg" alt="item7">
+                  <div class="carousel-caption">
+                    <h3>Coffe with Cream</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+               </div><!--end carousel-inner-->
+            </div><!--end carousel-->
+          <!--Begin Previous and Next buttons-->
+            <a class="left carousel-control" href="#drink-gallery" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#drink-gallery" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div><!--end modal-body-->
+        </div><!--end modal-content-->
+      </div><!--end modal-dialoge-->
+    </div><!--/myDrinkModal-->
+    <!-- Waffle Modal -->
+    <div class="modal fade" id="myWaffleModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="pull-left">WAFFLES</div>
+            <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+          </div>
+          <div class="modal-body">
+
+        <!--begin carousel-->
+            <div id="waffle-gallery" class="carousel slide" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active"> <img src="images/waffles/ice-cream-waffle.jpg" alt="item0">
+                  <div class="carousel-caption">
+                    <h3>Ice Cream Waffle</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img src="images/waffles/kiddy-waffle.jpg" alt="item1">
+                  <div class="carousel-caption">
+                    <h3>Kiddy Waffle</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/waffles/banana-split-waffle.jpg" alt="item2">
+                  <div class="carousel-caption">
+                    <h3>Banana Split Waffle</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/waffles/strawberry-waffle.jpg" alt="item3">
+                  <div class="carousel-caption">
+                    <h3>Strawberry Waffle</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/waffles/blueberry-waffle.jpg" alt="item4">
+                  <div class="carousel-caption">
+                    <h3>Blueberry Waffle</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/waffles/peanut-butter-waffle.jpg" alt="item5">
+                  <div class="carousel-caption">
+                    <h3>Peanut Butter Waffle</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/waffles/chocolate-waffle.jpg" alt="item6">
+                  <div class="carousel-caption">
+                    <h3>Chocolate Waffle</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/waffles/waffle.jpg" alt="item7">
+                  <div class="carousel-caption">
+                    <h3>Waffle</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+               </div><!--end carousel-inner-->
+            </div><!--end carousel-->
+          <!--Begin Previous and Next buttons-->
+            <a class="left carousel-control" href="#waffle-gallery" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#waffle-gallery" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div><!--end modal-body-->
+        </div><!--end modal-content-->
+      </div><!--end modal-dialoge-->
+    </div><!--/myWaffleModal-->
+    <!-- Sandwich Modal -->
+    <div class="modal fade" id="mySandwichModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="pull-left">SANDWICHES</div>
+            <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+          </div>
+          <div class="modal-body">
+
+        <!--begin carousel-->
+            <div id="sandwich-gallery" class="carousel slide" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active"> <img src="images/sandwiches/Club-Sandwich.jpg" alt="item0">
+                  <div class="carousel-caption">
+                    <h3>Club Sandwich</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img src="images/sandwiches/Pickled-Herring-Sandwich.jpg" alt="item1">
+                  <div class="carousel-caption">
+                    <h3>Pickled Herring Sandwich</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/sandwiches/Ruben-Sandwich.jpg" alt="item2">
+                  <div class="carousel-caption">
+                    <h3>Ruben Sandwich</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/sandwiches/Tesco-Turkey-Sandwich.jpg" alt="item3">
+                  <div class="carousel-caption">
+                    <h3>Tesco Turkey Sandwich</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/sandwiches/wholemeal-bread-sandwich.jpg" alt="item4">
+                  <div class="carousel-caption">
+                    <h3>Whole Bread Sandwich</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/sandwiches/Bacon-Sandwich.jpg" alt="item5">
+                  <div class="carousel-caption">
+                    <h3>Bacon Sandwich</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img  src="images/sandwiches/Hotdog-Sandwich.jpg" alt="item6">
+                  <div class="carousel-caption">
+                    <h3>Hotdog Sandwich</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+                <div class="item"> <img src="images/sandwiches/Sandwich.jpg" alt="item7">
+                  <div class="carousel-caption">
+                    <h3>Sandwich</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                  </div>
+                </div>
+               </div><!--end carousel-inner-->
+            </div><!--end carousel-->
+          <!--Begin Previous and Next buttons-->
+            <a class="left carousel-control" href="#sandwich-gallery" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#sandwich-gallery" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div><!--end modal-body-->
+        </div><!--end modal-content-->
+      </div><!--end modal-dialoge-->
+    </div><!--/mySandwichModal-->
+    <footer>
+    <div class="footer-content">
+      <p>Copyright 2017 BENz CAFE</p>
+      <figcaption>Victory U-Belt, España Blvd corner Padre Campa St, Sampaloc, Manila, Metro Manila</figcaption>
+    </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="css/javascript.js"></script>
+  </body>
+</html>
