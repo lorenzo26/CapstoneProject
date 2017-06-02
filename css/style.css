@@ -93,7 +93,7 @@ h2{
 }
 
 .home h2{
- color: white;
+
  text-align: center;
  font-family: MyFont;    
 }
@@ -123,6 +123,7 @@ h2{
      background: rgba(0,0,0,0.5);
      width: 80%;
      margin: 0 auto;
+     box-shadow: 0px 0px 30px white;
 }
 
 .btn-home{
@@ -151,6 +152,12 @@ h2{
     margin-bottom: 50px;
     margin: 0 auto;
     position: relative;
+    background: rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 30px white;
+}
+
+.menu h2 {
+    margin-left: 2%;
 }
 
 .menu-panel img{
@@ -189,9 +196,6 @@ h2{
 
 }
 
-.menu-panel{
-    background: rgba(0,0,0,0.8);
-}
 
 
 .HSshowit {
@@ -250,6 +254,7 @@ h2{
     margin-top: 70px;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 0px 0px 30px white;
 }
 
 .contact-content p{
@@ -293,10 +298,12 @@ h2{
     width: 80%;
     background: rgba(0,0,0,0.7);
     padding: 50px 0;
+    box-shadow: 0px 0px 30px white;
     
 }
 
 .row-about h3{
+    padding-top: 20px;
    font-size: 2vw;
 }
 
@@ -308,6 +315,8 @@ h2{
 .row-about p{
    color: white;
    text-align: justify;
+   padding: 0 20px;
+   font-size: 1.3vw;
    
 }
 
@@ -357,6 +366,10 @@ h2{
 }
 .row h3{
    font-size: 5vw;
+}
+.row-about p{
+   font-size: 3vw;
+   
 }
 
 .coffee-img, .waffle-img, .sandwich-img {
